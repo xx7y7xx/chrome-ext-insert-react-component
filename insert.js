@@ -14,7 +14,8 @@ var li = document.getElementById('li_expBillQueryCondi');
 if (li) {
   
   // bootstrap style namespace
-  document.body.className += "tw-bs";
+  // This will conlict with the original style
+  //document.body.className += "tw-bs";
   
   var parent = li.parentNode;
 
@@ -32,6 +33,7 @@ if (li) {
   // <div id="root" />
   var div = document.createElement("div");
   div.id = "root";
+  div.className = "tw-bs";
   div.innerHTML = "fuck you";
 
   //parent.insertBefore(link1, li);
