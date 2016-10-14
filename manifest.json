@@ -1,0 +1,26 @@
+{
+  "manifest_version": 2,
+  "name": "将UI控件插入到页面中",
+  "description": "将UI控件插入到页面中",
+  "version": "1.0",
+  "content_scripts": [
+    {
+      "matches": ["http://123.103.9.189:8255/portal/app/app_expExpensePortlet*"],
+      "js": [
+        "insert.js",
+        "common.js",
+        "index.js"
+      ],
+      "css": [
+        "css/tw-bs.3.1.1.css",
+        "css/fonts.css"
+      ],
+      "run_at": "document_end"
+    }
+  ],
+  "web_accessible_resources": [
+    "fonts/glyphicons-halflings-regular.woff",
+    "fonts/glyphicons-halflings-regular.ttf",
+    "data/tree.json"
+  ]
+}
