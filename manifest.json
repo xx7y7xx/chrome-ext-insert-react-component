@@ -5,8 +5,13 @@
   "version": "1.0",
   "content_scripts": [
     {
-      "matches": ["http://123.103.9.189:8255/portal/app/app_expExpensePortlet*"],
+      "matches": [
+        "http://123.103.9.189:8255/portal/app/app_expExpensePortlet*",
+        "http://10.10.169.63/portal/app/app_expExpensePortlet*"
+      ],
+      "all_frames": true,
       "js": [
+        "log.js",
         "insert.js",
         "common.js",
         "index.js"

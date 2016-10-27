@@ -1,4 +1,5 @@
 // d3vin.chen@gmail.com
+log("load insert.js");
 
 // Switch to tab
 var tab = document.getElementById("expense_wait_link");
@@ -39,4 +40,7 @@ if (li) {
   //parent.insertBefore(link1, li);
   //parent.insertBefore(link2, li);
   parent.insertBefore(div, li.nextSibling);
+  
+  // remove old query
+  li.remove();
 }
